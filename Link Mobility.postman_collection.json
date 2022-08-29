@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "4b698abe-5bfc-4ac7-9710-b419990f90fe",
+		"name": "Link Mobility",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17024662"
+	},
+	"item": [
+		{
+			"name": "Format Swedish phone number to MSISDN format",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
