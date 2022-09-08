@@ -3,8 +3,10 @@ package com.linkmobility.numbers.controller;
 import com.linkmobility.numbers.dto.Numbers;
 import com.linkmobility.numbers.exception.ApiProcessingException;
 import com.linkmobility.numbers.service.ApiService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/numbers")
-@Slf4j
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class ApiController {
 
     @Autowired

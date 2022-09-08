@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@Slf4j
 public class ApiService {
     public List<String> formatNumbers(List<String> numbers) throws IllegalArgumentException, ApiProcessingException {
         List<String> resultNumbers = new ArrayList<>();
